@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Feeling Good? Bhudu got a solution</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .tab-btn {
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        
+        .tab-btn.active {
+            background-color: #388e3c;
+            font-weight: bold;
+        }
+        
+        .content-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+        
+        .joke {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .joke:last-child {
+            border-bottom: none;
+        }
+        
+        .joke-setup {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .joke-punchline {
+            font-style: italic;
+            color: #4CAF50;
+        }
+        
+        .story-link {
+            display: block;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+        }
+        
+        .story-link:hover {
+            background-color: #e9e9e9;
+            transform: translateX(5px);
+        }
+        
+        .story-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #4CAF50;
+        }
+        
+        .story-desc {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Not Feeling Good? Bhudu got a solution</h1>
+    </header>
+    
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('jokes')">Jokes</button>
+            <button class="tab-btn" onclick="showSection('stories')">Short Stories</button>
+        </div>
+        
+        <div id="jokes" class="content-section">
+            <h2>Laugh Your Worries Away</h2>
+            
+            <div class="joke">
+                <div class="joke-setup">Why don't scientists trust atoms?</div>
+                <div class="joke-punchline">Because they make up everything!</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">Did you hear about the mathematician who's afraid of negative numbers?</div>
+                <div class="joke-punchline">He'll stop at nothing to avoid them.</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">Why don't skeletons fight each other?</div>
+                <div class="joke-punchline">They don't have the guts.</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">I told my wife she was drawing her eyebrows too high.</div>
+                <div class="joke-punchline">She looked surprised.</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">What do you call a fake noodle?</div>
+                <div class="joke-punchline">An impasta!</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">How do you organize a space party?</div>
+                <div class="joke-punchline">You planet!</div>
+            </div>
+            
+            <div class="joke">
+                <div class="joke-setup">Why did the scarecrow win an award?</div>
+                <div class="joke-punchline">Because he was outstanding in his field!</div>
+            </div>
+        </div>
+        
+        <div id="stories" class="content-section hidden">
+            <h2>Short Stories to Lift Your Spirits</h2>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Little Engine That Could</div>
+                <div class="story-desc">A classic tale of perseverance and positive thinking.</div>
+            </a>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Giving Tree</div>
+                <div class="story-desc">A heartwarming story about unconditional love and generosity.</div>
+            </a>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Tortoise and the Hare</div>
+                <div class="story-desc">A timeless fable about the value of persistence.</div>
+            </a>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Boy Who Cried Wolf</div>
+                <div class="story-desc">An important lesson about honesty and trust.</div>
+            </a>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Velveteen Rabbit</div>
+                <div class="story-desc">A beautiful story about love and what it means to be real.</div>
+            </a>
+            
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="story-link" target="_blank">
+                <div class="story-title">The Ugly Duckling</div>
+                <div class="story-desc">A tale of transformation and self-acceptance.</div>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Bhudu's Solutions. All rights reserved.</p>
+        <p>Remember: Laughter and good stories are the best medicine!</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Update active tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Set the clicked button as active
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
